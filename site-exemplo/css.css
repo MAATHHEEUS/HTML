@@ -1,3 +1,7 @@
+* {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 body{
         background-color: black;
         color: aquamarine;
@@ -6,8 +10,18 @@ body{
 
 p{
     font-size: 20%;
+    text-justify: justify;
 }
 
 h1{
     color: blanchedalmond;
+    font-size: 30px;
+}
+
+main{
+    background-color: brown;
+    box-shadow: 3px 3px blue;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
 }
