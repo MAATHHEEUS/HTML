@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box; /* Os elementos filhos não sairão do body*/
+    height: 100vh;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.destaque-titulo {
+    color: #008000;
+}
+
+.apresentacao {
+    margin: 10%;
+    display: flex; /*Todos os filhos juntos*/
+    align-items: center; /*Centraliza os filhos*/
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    height: 615px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+}
