@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a href="index.html" class="cabecalho__menu__link">Home</a>
+            <a href="about.html" class="cabecalho__menu__link">Sobre mim</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível 
@@ -32,8 +37,10 @@
                 </a>
             </div>
         </section>
-        <img src="./assets/imagem.jpeg" alt="Foto do Matheus">
+        <img class="apresentacao__imagem" src="./assets/imagem.jpeg" alt="Foto do Matheus">
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por Matheus</p>
+    </footer>
 </body>
 </html>
