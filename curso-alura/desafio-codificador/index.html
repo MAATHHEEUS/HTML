@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Codificador de texto</h1>
+        <input placeholder="Digite seu texto" type="text" name="entrada-texto" id="entrada-texto">
+        <input placeholder="Nenhuma mensagem" type="text" name="saida-texto" id="saida-texto" readonly disabled>
+        <button id="btn-codificar" onclick="codificarTexto()">Codificar</button>
+        <button id="btn-decodificar" onclick="decodificarTexto()">Decodificar</button>
+        <button id="btn-copiar" onclick="copiarTexto()">Copiar</button>
+    </main>
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+</html>
