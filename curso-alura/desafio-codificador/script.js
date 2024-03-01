@@ -24,6 +24,7 @@ function decodificarTexto() {
             textoFinal = textoFinal.replaceAll(element[1], element[0]);
         });
         document.getElementById('saida-texto').value = textoFinal;
+        trocarImagemPorBotao();
     }
     // Limpa o campo de entrada
     document.getElementById('entrada-texto').value = '';
@@ -46,17 +47,31 @@ function codificarTexto() {
             textoFinal = textoFinal.replaceAll(element[0], element[1]);
         });
         document.getElementById('saida-texto').value = textoFinal;
+        trocarImagemPorBotao();
     }
     // Limpa o campo de entrada
     document.getElementById('entrada-texto').value = '';
 }
 
+function trocarImagemPorBotao() {
+    // some com a imagem e textos
+    document.getElementById('img1').style.display = 'none';
+    document.getElementById('apresentacao-saida-titulo').style.display = 'none';
+    document.getElementById('apresentacao-saida-texto').style.display = 'none';
+
+    // aparece botão 'copiar' e textarea
+    document.getElementById('saida-texto').style.display = 'initial';
+    document.getElementById('btn-copiar').style.display = 'initial';
+}
+
 function copiarTexto() {
     let textoCopiado = document.getElementById("saida-texto");
+    textoCopiado.removeAttribute('disabled');
     textoCopiado.select();
     textoCopiado.setSelectionRange(0, 99999)
     document.execCommand("copy");
     textoCopiado.value = '';
+    textoCopiado.setAttribute('disabled', true);
 }
 
 function contemCaracterEspecial(texto){

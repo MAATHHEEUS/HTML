@@ -8,13 +8,28 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <h1>Codificador de texto</h1>
-        <input placeholder="Digite seu texto" type="text" name="entrada-texto" id="entrada-texto">
-        <input placeholder="Nenhuma mensagem" type="text" name="saida-texto" id="saida-texto" readonly disabled>
-        <button id="btn-codificar" onclick="codificarTexto()">Codificar</button>
-        <button id="btn-decodificar" onclick="decodificarTexto()">Decodificar</button>
-        <button id="btn-copiar" onclick="copiarTexto()">Copiar</button>
+    <main class="apresentacao">
+        <div class="apresentacao__logo">
+            <img src="assets/logo.png" alt="Logo da Alura">
+        </div>
+        <section class="apresentacao__entrada">
+            <textarea rows="11" class="apresentacao__entrada__input" placeholder="Digite seu texto" name="entrada-texto" id="entrada-texto"></textarea>
+            <p class="apresentacao__entrada__informacao">
+                <img src="assets/icone-i.png" alt="Icone de informação">
+                Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="apresentacao__entrada__botoes">
+                <button id="btn-codificar" onclick="codificarTexto()">Criptografar</button>
+                <button id="btn-decodificar" onclick="decodificarTexto()">Descriptografar</button>
+            </div>
+        </section>
+        <div class="apresentacao__saida">
+            <textarea placeholder="Nunhuma mensagem" class="apresentacao__saida__input__saida" name="saida-texto" id="saida-texto" readonly disabled></textarea>
+            <img id="img1" src="assets/imagem1.png" alt="Imagem 1">
+            <p id="apresentacao-saida-titulo" class="apresentacao__saida__titulo">Nenhuma mensagem encontrada</p>
+            <p id="apresentacao-saida-texto" class="apresentacao__saida__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button id="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
     </main>
     <footer></footer>
 </body>

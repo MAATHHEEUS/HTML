@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-principal: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor-terciaria: #FFFFFF;
+    --cor-quartenaria: #495057;
+
+    --fonte-principal: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box; /* Os elementos filhos não sairão do body*/
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+.apresentacao {
+    display: flex;
+    padding: 2% 2% 2% 5%;
+}
+
+.apresentacao__entrada{
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.apresentacao__entrada__input {
+    resize: none;
+    width: 42.5rem;
+    margin: 5rem 0rem 0rem 6rem;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    border: none;
+    background-color: var(--cor-principal);
+}
+
+.apresentacao__entrada__input::placeholder {
+    color:var(--cor-secundaria);
+}
+
+textarea:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.apresentacao__entrada__informacao {
+    color: var(--cor-quartenaria);
+    font-size: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 1rem 0rem 0rem 6rem;
+}
+
+.apresentacao__entrada__botoes {
+    margin: 1rem 0px 0px 6rem;
+    gap: 1.5rem;
+    display: flex;
+}
+
+#btn-codificar {
+    color: var(--cor-terciaria);
+    text-align: center;
+    font-size: 1rem;
+    background-color: var(--cor-secundaria);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 20.5rem;
+    border: none;
+}
+
+#btn-decodificar {
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 1rem;
+    background-color: #D8DFE8;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 20.5rem;
+    border: none;
+}
+
+.apresentacao__saida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--cor-terciaria);
+    border-radius: 2rem;
+    margin: 0rem 0px 0px 5rem;
+    width: 25rem;
+    height: 40rem;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+.apresentacao__saida__input__saida {
+    resize: none;
+    font-size: 1.5rem;
+    color: var(--cor-quartenaria);
+    border: none;
+    display: none;
+    height: 49rem;
+}
+
+.apresentacao__saida__titulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #343A40;
+}
+
+.apresentacao__saida__texto {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-quartenaria);
+}
+
+#btn-copiar {
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 1rem;
+    background-color: var(--cor-terciaria);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 20.5rem;
+    border: 1px solid #0A3871;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        display: flex;
+        padding: 2% 2% 2% 5%;
+        flex-direction: column;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    .apresentacao__entrada{
+        height: auto;
+    }
+
+    .apresentacao__entrada__input {
+        margin: 5rem 0rem 0rem 0rem;
+    }
+
+    .apresentacao__entrada__informacao {
+        margin: 1rem 0rem 0rem 1rem;
+    }
+    
+    .apresentacao__entrada__botoes {
+        margin: 1rem 0px 0px 1rem;
+    }
+
+    .apresentacao__saida{
+        height: auto;
+        width: auto;
+        margin: 0rem 0px 0px 0rem;
+    }
+
+    .apresentacao__saida__input__saida {
+        height: auto;
+        width: 41rem;
+    }
+
+    #img1 {
+        display: none;
+    }
+
+    #btn-copiar {
+        width: 41rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .apresentacao__saida__input__saida {
+        height: auto;
+        width: 25rem;
+    }
+
+    #btn-copiar {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .apresentacao__entrada__botoes {
+        flex-direction: column;
+    }
+
+    #btn-codificar {
+        width: 17rem;
+    }
+
+    #btn-decodificar {
+        width: 17rem;
+    }
+
+    .apresentacao__saida__input__saida {
+        height: auto;
+        width: 15rem;
+    }
+
+    #btn-copiar {
+        width: 15rem;
+    }
+}
