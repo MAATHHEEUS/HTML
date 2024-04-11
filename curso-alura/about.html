@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+    <title>Página portifólio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "r1DFhOIiyyZWyXap5",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('form-contato').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_j2bslmd', 'template_urqd8gu', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     
@@ -21,10 +44,8 @@
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">Desenvolvedor Full Stack & Cibersegurança - HTML/XML | CSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PHP | JAVA | PYTHON | C# | FIREBIRD | MYSQL | EXCEL</p>
-            <p class="apresentacao__conteudo__texto">Estudante da área de Tecnologia da Informação desde 2018, onde conduzo meus estudos para as tecnologias e práticas de desenvolvimento de sistemas Web e Desktop, minhas habilidades englobam lógica de programação, linguagens de programação, uso de ferramentas de desenvolvimento, banco de dados relacional e não relacional, Inglês, Espanhol e Libras, conceitos de redes, segurança e ética da informação.
-                Durante minha vida profissional já atuei com atendimento ao público em telemarketing, com prestação de serviços voltados a engenharia elétrica por quase 2 anos e como Programador Treinee na empresa C7ti, onde fui responsável por análise, desenvolvimento e manutenção de sistemas Web engajados em gestão empresarial(ERP). Fui estagiário no escritório da Fasul Engenharia, atuando com assistência técnica em software e hardware.
-                Amo de paixão a área de desenvolvimento de TI e pretendo manter-me como um programador com multiskills com muito estudo, dedicação e diferentes experiências de aprendizado.</p>
+            <p class="apresentacao__conteudo__texto">Desenvolvedor Full Stack & Cibersegurança</p>
+            <p class="apresentacao__conteudo__texto">Tenho 25 Anos, moro em Suzano/SP, sou estudante da área de Tecnologia da Informação desde 2018, me identifico com as áreas de desenvolvimento e segurança, pretendo continuar me dedicando a elas com diferentes experiências de aprendizado. Em um futuro distante, sonho em me tornar um professor universitário.</p>
         </section>
         <img class="apresentacao__imagem" src="assets/imagem.jpeg" alt="Foto do Matheus">
     </main>
@@ -116,6 +137,80 @@
                 <h3>Técnico em Desenvolvimento de sistemas</h3>
                 <p>ETEC Poá - 2023</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Experiência e Projetos -->
+    <section class="experiencias__projetos">
+        <div><h2 class="experiencias__projetos__titulo">Experiências e Projetos</h2></div>
+        <article class="exp__proj__item">
+            <img height="70%" width="50%" src="assets/logo-c7ti.png " alt="Logo C7ti">
+            <div class="item__conteudo">
+                <h3>Programador Trainne</h3>
+                <p>Set/2022 - Ago/2023 · 1 ano</p>
+                <div class="item__botoes">
+                    <a href="https://www.linkedin.com/in/devmatheus-carvalho-oliveira/" target="_blank" class="botao__repo">Meu Linkedin</a>
+                    <a href="https://c7ti.com.br/c7ti.html" target="_blank" class="botao__demonstracao">Site Empresa</a>
+                </div>
+            </div>
+        </article>
+        <article class="exp__proj__item">
+            <img height="70%" width="50%" src="assets/rei-da-varzea.png" alt="Logo Rei da Várzea">
+            <div class="item__conteudo">
+                <h3>Sistema Web - Rei da Várzea</h3>
+                <p>Projeto pessoal desenvolvido com tecnologias web</p>
+                <div class="item__botoes">
+                    <a href="https://github.com/MAATHHEEUS/Proj_RDV" target="_blank" class="botao__repo">Repositório</a>
+                    <a href="https://youtu.be/4AxCkoDfYSo?si=6QOpa-Av8KYBvCYD" target="_blank" class="botao__demonstracao">Ver demo</a>
+                </div>
+            </div>
+        </article>
+        <article class="exp__proj__item">
+            <img height="70%" width="70%" src="assets/site-pessoal.png" alt="Imagem do site pessoal">
+            <div class="item__conteudo">
+                <h3>Site Pessoal</h3>
+                <p>HTML, JAVASCRIPT e BOOTSTRAP</p>
+                <div class="item__botoes">
+                    <a href="https://github.com/MAATHHEEUS/Meu-Site" target="_blank" class="botao__repo">Repositório</a>
+                    <a href="https://maathheeus.github.io/Meu-Site/" target="_blank" class="botao__demonstracao">Ver demo</a>
+                </div>
+            </div>
+        </article>
+        <article class="exp__proj__item">
+            <img height="70%" width="70%" src="assets/cleany.png" alt="Imagem do Cleany">
+            <div class="item__conteudo">
+                <h3>App mobile - Cleany</h3>
+                <p>JAVA e Android Studio</p>
+                <div class="item__botoes">
+                    <a href="https://github.com/MAATHHEEUS/Android" target="_blank" class="botao__repo">Repositório</a>
+                    <a href="https://youtu.be/mZhZD-UCk54?si=Xo5AQuB4sBFLwyTO" target="_blank" class="botao__demonstracao">Ver demo</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Form de contato -->
+    <section class="form__contato">
+        <h2 class="form__contato__titulo">Contato</h2>
+        <p class="form__contato__descricao">Quer entrar em contato comigo?
+            Preencha o formulário a baixo e entrarei em contato o mais rápido possível.</p>
+        <div class="form__contato__conteudo">
+            <img src="assets/contato.png" alt="Imagem de telefone">
+            <form action="" class="form" id="form-contato">
+                <label for="nome">Nome</label>
+                <input placeholder="João CEO da Google" type="text" name="f_nome" id="f_nome"></input>
+
+                <label for="emamil">Email</label>
+                <input placeholder="joaoCEO@gmail.com" type="email" name="f_email" id="f_email">
+
+                <label for="assunto">Assunto</label>
+                <input placeholder="Vaga de CTO" type="text" name="f_assunto" id="f_assunto">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea placeholder="Olá, gostoria de te oferecer uma vaga de CTO na Google!" name="f_msg" id="f_msg" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="botao__form__submit" value="Enviar mensagem">
+            </form> 
         </div>
     </section>
 
