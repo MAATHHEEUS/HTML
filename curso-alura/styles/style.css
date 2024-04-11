@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); /*Import fonts*/
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); 
 
+/* Declaração de variáveis */
 :root {
     --cor-principal: #000000;
     --cor-secundaria: #F6F6F6;
@@ -10,6 +12,7 @@
     --fonte-secundaria: "Montserrat", sans-serif;
 }
 
+/* Reset simples */
 * {
     margin: 0;
     padding: 0;
@@ -19,15 +22,20 @@ body {
     box-sizing: border-box; /* Os elementos filhos não sairão do body*/
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
+    text-align: center;
 }
 
+/* CABEÇALHO */
 .cabecalho {
     padding: 2% 0% 0% 15%;
 }
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;
+    white-space: nowrap;
+    justify-content: space-around;
+    gap: 1.5em;
+    align-items: center;
 }
 
 .cabecalho__menu__link {
@@ -38,6 +46,7 @@ body {
     text-decoration: none;
 }
 
+/* CONTEÚDO PRINCIPAL */
 .apresentacao {
     gap: 82px;
     padding: 5% 15%;
@@ -102,9 +111,91 @@ body {
 }
 
 .apresentacao__imagem {
-    width: 50%;
+    width: 40%;
 }
 
+/* HABILIDADES */
+.apresentacao__skills__titulo {
+    font-family: var(--fonte-principal);
+    margin-bottom: 1rem;
+}
+
+.apresentacao__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 2rem;
+    padding: 15px;
+}
+
+.apresentacao__skill {
+    height: 150px;
+    flex-grow: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+}
+
+/* HOBBIES */
+.apresentacao__hobbies__titulo {
+    font-family: var(--fonte-principal);
+    margin-bottom: 1rem;
+}
+
+.apresentacao__hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 2rem;
+}
+
+.apresentacao__hobbie {
+    height: 150px;
+    flex-grow: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+}
+
+/* FORMAÇÃO */
+.apresentacao__formacao {
+    background-color: var(--cor-terciaria);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.apresentacao__formacao__titulo {
+    font-family: var(--cor-principal);
+    font-size: 2.5rem;
+}
+
+.apresentacao__formacao__item {
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formacao__item__imagem {
+    background-color: var(--cor-secundaria);
+    height: 17.4rem;
+    width: 28.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formacao__item__descricao{
+    font-family: var(--fonte-secundaria);
+}
+
+/* RODAPÉ */
 .rodape {
     padding: 24px;
     color: var(--cor-principal);
@@ -116,14 +207,12 @@ body {
 }
 
 @media (max-width: 1200px) {
+    /* CABEÇALHO */
     .cabecalho {
         padding: 10%;
     }
-
-    .cabecalho__menu {
-        justify-content: center;
-    }
     
+    /* CONTEÚDO PRINCIPAL */
     .apresentacao {
         flex-direction: column-reverse;
         padding: 5%;
@@ -131,5 +220,11 @@ body {
 
     .apresentacao__conteudo {
         width: auto;
+    }
+
+    /* FORMAÇÃO */
+    .formacao__item__imagem {
+        height: 7.4rem;
+        width: 18.5rem; 
     }
 }
