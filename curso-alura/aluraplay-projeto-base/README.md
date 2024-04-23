@@ -1,1 +1,0 @@
-Projeto base do alura play usado para treinar a estilização e responsividade com css
