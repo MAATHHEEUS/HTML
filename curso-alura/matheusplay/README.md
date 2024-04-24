@@ -5,3 +5,5 @@ O projeto conta com uma simulação de consumo de API no arquivo db.json que dev
 A "API" retorna os vídeos de forma dinâmica para serem preenchidos na tela index.(Método GET).
 
 Da mesma forma a "API" é alimentada por um formulário.(Método POST).
+
+É possível pesquisar pelo título do vídeo.

@@ -22,6 +22,23 @@ body {
     text-align: center;
 }
 
+.mensagem__titulo {
+    color: var(--verde-medio);
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+.mensagem {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mensagem__imagem {
+    width: 30%;
+}
+
 /* CABEÇALHO */
 
 .cabecalho__container {
@@ -41,6 +58,7 @@ body {
 .pesquisar__input {
     width: 260px;
     height: 32px;
+    color: var(--cinza-texto);
     border: 1px solid rgb(211, 211, 211);
     font-size: 16px;
     padding: 3px 8px;

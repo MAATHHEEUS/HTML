@@ -24,4 +24,24 @@ async function listaVideos() {
     }
 }
 
+async function buscaVideo(evento) {
+    evento.preventDefault();
+
+    const termoDeBusca = document.querySelector("[data-pesquisa]").value;
+    const conexao = await fetch(`http://localhost:3000/videos?titulo=${termoDeBusca}`);
+    const conexaoJSON = await conexao.json();
+    if(conexao){
+        lista.innerHTML = ``;
+        conexaoJSON.forEach(elemento => lista.appendChild(
+            constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)
+        ));
+    }
+    if(conexaoJSON.length === 0){
+        lista.innerHTML = `<h2 class="mensagem__titulo">Nenhum vídeo encontrado com o título "${termoDeBusca}"!</h2>`;
+    }
+}
+
+const botaoPesquisar = document.querySelector("[data-botao_pesquisar]");
+botaoPesquisar.addEventListener("click", evento => buscaVideo(evento));
+
 listaVideos();

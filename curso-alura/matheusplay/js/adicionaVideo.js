@@ -1,5 +1,5 @@
 async function criarVideo(titulo, url, descricao, imagem) {
-    const conexao = await fetch("http://localhost:3000/videos", {
+    const conexao = await fetch("http://localhost:3000/video", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -11,6 +11,7 @@ async function criarVideo(titulo, url, descricao, imagem) {
             imagem: imagem
         })
     });
+    if(!conexao.ok) throw new Error("Não foi possível carregar o vídeo.");
     const conexaoConvertida = conexao.json();
 }
 
@@ -24,9 +25,13 @@ async function submitForm(evento) {
     const url = document.querySelector("[data-url]").value;
     const imagem = document.querySelector("[data-imagem]").value;
 
-    await criarVideo(titulo, url, descricao, imagem);
+    try {
+        await criarVideo(titulo, url, descricao, imagem);
 
-    window.location.href = "../pages/envio-concluido.html";
+        window.location.href = "../pages/envio-concluido.html";     
+    } catch (error) {
+        alert(error);
+    }
 }
 
 formulario.addEventListener("submit", evento => submitForm(evento));
