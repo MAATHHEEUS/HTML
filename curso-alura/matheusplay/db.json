@@ -1,56 +1,56 @@
 {
   "videos": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Apresentação Pessoal 01/2024 - (Apresentação, Currículo).",
       "descricao": "14 visualizações - há 2 meses",
       "url": "https://www.youtube.com/embed/OfJQnQMEgv0?si=IVhkqONKEWZlz5J5",
       "imagem": "img/videos/Ellipse 11.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Projetos do programa de formação ONE Alura + @Oracle - (HTML, CSS, JavaScript e GitHub).",
       "descricao": "12 visualizações - há 1 mês",
       "url": "https://www.youtube.com/embed/RosupmdG0Gw?si=InBeFegxg3eNVZmU",
       "imagem": "img/videos/Ellipse 11.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "Rei da Várzea - (HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP, MYSQL, PHOTOSHOP, CANVAS).",
       "descricao": "3 visualizações - há 5 meses",
       "url": "https://www.youtube.com/embed/gEav0RJsF18?si=cpDsq_UI8CofG_kH",
       "imagem": "img/videos/Ellipse 11.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "Desenvolvimento Web - (Apresentação, projeto voluntário).",
       "descricao": "1 visualização - há 4 meses",
       "url": "https://www.youtube.com/embed/cO4QfiBsriw?si=Nab8BpGAK05W5NAD",
       "imagem": "img/videos/Ellipse 11.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": "Site de Avaliação - (HTML, CSS, PHP).",
       "descricao": "4 visualizações - há 5 meses",
       "url": "https://www.youtube.com/embed/44MHdPAV2KE?si=abHdY8sBBDcVj1yK",
       "imagem": "img/videos/Ellipse 11.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "titulo": "TCC Etec - (HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP, MYSQL).",
       "descricao": "5 visualizações - há 5 meses",
       "url": "https://www.youtube.com/embed/IeGdVmFpim0?si=Vv7FD9YOuEFzqjje",
       "imagem": "img/videos/Ellipse 11.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "titulo": "Cleany App Mobile - (XML, JAVA, SQLite).",
       "descricao": "2 visualizações - há 5 meses",
       "url": "https://www.youtube.com/embed/mZhZD-UCk54?si=OkHNArViLwmidXoG",
       "imagem": "img/videos/Ellipse 11.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "titulo": "Agenda Mobile - (XML, JAVA, SQLite).",
       "descricao": "1 visualização - há 5 meses",
       "url": "https://www.youtube.com/embed/9_vlfanvz3Y?si=SYtS7tFEZxyC-Unx",
@@ -61,7 +61,14 @@
       "descricao": "1 visualização - há 5 meses",
       "url": "https://www.youtube.com/embed/4AxCkoDfYSo?si=BdmJriffBTOtzbYJ",
       "imagem": "img/videos/Ellipse 11.png",
-      "id": 9
+      "id": "9"
+    },
+    {
+      "id": "9e6e",
+      "titulo": "Projeto E-commerce - (HTML, CSS, React, API's, json-server).",
+      "descricao": "5mil visualizações - 1 ano",
+      "url": "https://www.youtube.com/embed/Eh3X5YckHU0?si=NBD0P9qJuf9JaZPz",
+      "imagem": "img/videos/Ellipse 11.png"
     }
   ]
 }

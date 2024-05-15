@@ -1,5 +1,5 @@
 async function criarVideo(titulo, url, descricao, imagem) {
-    const conexao = await fetch("http://localhost:3000/video", {
+    const conexao = await fetch("http://localhost:3000/videos", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
