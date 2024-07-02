@@ -1,0 +1,177 @@
+*{
+    color: white;
+    background-color: black;
+    font-family: courier, arial, helvetica;
+    font-size: 20px;
+    line-height: 1.4;    
+}
+
+h1{
+    font-size: 60px;
+}
+
+details {
+    display: block;
+    font-size: 20px;
+}
+
+div.text {
+    background-color: #000000;
+    color: white;
+    font-size: 22px;
+    padding: 16px 32px;
+}
+
+img.primeira {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    backface-visibility: hidden;
+    max-width: 85%;
+    height: auto;
+}
+
+img.setas{
+    float: right;
+    width: 25px;
+    height: 25px;
+}
+
+img.segunda{
+    border-radius: 50%;
+    width: 600px;
+    height: 400px;
+}
+
+div.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+  
+.container:hover .primeira {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+
+div.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 75%;
+}
+
+div.segunda{
+    height: 400px;;
+    text-align: justify;
+    vertical-align:auto;
+    align-items: center;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+div.tube{
+    text-align: center;
+    font-size: 35px;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+div.esquerda{
+    width: 49%;
+    float: left;
+    text-align: center;
+}
+
+div.direita{
+    width: 49%;
+    text-align: center;
+    float: right;
+}
+
+img.icone{
+    height: 50px;
+    width: 50px;
+}
+
+div.album{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    position: relative;
+    border: 3px solid white;
+    width: 80%;
+    border-radius: 25px;
+}
+#um{
+    height: 1100px;
+}
+
+#dois{
+    height: 1180px;
+}
+
+#tres{
+    height: 1000px;
+}
+
+#quatro{
+    height: 400px;
+}
+
+img.album{
+    width: 180px;
+    height: 200px;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+
+div.imagem{
+    margin-left: 80%;
+    width: 17%;
+}
+
+div.textDiscografia{
+    width: 50%;
+    position: absolute;
+}
+
+#textDiscografiaUm{
+    top: 15%;
+    left: 20%;
+}
+
+#textDiscografiaDois{
+    top: 14%;
+    left: 18%;
+}
+
+#textDiscografiaTres{
+    top: 15%;
+    left: 20%;
+}
+#textDiscografiaQuatro{
+    top: 29%;
+    left: 20%;
+}
