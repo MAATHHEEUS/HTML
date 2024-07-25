@@ -1,5 +1,5 @@
 # trabalho_PW
-Trabalho de programação web, um site de um artista
+Trabalho de programação web(ETEC Poá), um site de um artista
 
 Foi desenvolvido um site em HTML seguindo os parâmetros passados pelo professor Paulo:
     
